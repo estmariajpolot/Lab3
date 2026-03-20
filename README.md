@@ -685,7 +685,42 @@ picos_amp = np.array(picos_amp)
   <img src="C1.png" width="700">
 </p>
 <p align="center">
-  <em>señal filtrada + ventana: mujer1</em>
+  <em>Detección de picos: mujer1 </em>
+</p>
+
+<p align="center">
+  <img src="C2.png" width="700">
+</p>
+<p align="center">
+  <em>Detección de picos: mujer2 </em>
+</p>
+
+<p align="center">
+  <img src="C3.png" width="700">
+</p>
+<p align="center">
+  <em>Detección de picos: mujer3</em>
+</p>
+
+<p align="center">
+  <img src="C4.png" width="700">
+</p>
+<p align="center">
+  <em>Detección de picos: hombre1 </em>
+</p>
+
+<p align="center">
+  <img src="C5.png" width="700">
+</p>
+<p align="center">
+  <em>Detección de picos: hombre2</em>
+</p>
+
+<p align="center">
+  <img src="C6.png" width="700">
+</p>
+<p align="center">
+  <em>Detección de picos: hombre3</em>
 </p>
 
 El desfase inicial de `0.2 × período` es intencional: evita capturar un pico incompleto al comienzo de la ventana. Esto explica por qué el número de ciclos detectados es sistemáticamente uno menos que el esperado teóricamente, como se puede verificar en los resultados: a 200 Hz se esperan ~12 ciclos en 60 ms y se detectan 11; a 350 Hz se esperan ~21 y se detectan 20, y así sucesivamente. Es una diferencia predecible, no un error del algoritmo.
