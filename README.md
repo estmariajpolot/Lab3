@@ -233,7 +233,7 @@ plt.show()
 
 ---
 
-### - Espectro de magnitud
+### Espectro de magnitud
 
 #### F0, frecuencia media, brillo e intensidad 
 
@@ -422,7 +422,7 @@ El filtro pasa-banda funcionó correctamente en los tres hombres, aunque con dif
 **mujer3.wav:** es la más particular de las tres después del filtrado. A diferencia de las otras dos, su pico dominante aparece en la parte alta del rango, entre 380–500 Hz, con un pico secundario cerca de 250 Hz. Esto es consistente con la F0 más alta de las tres (~430 Hz) y tiene sentido fisiológicamente: una voz más aguda concentra su energía fundamental en frecuencias más altas dentro del rango filtrado. El filtro funcionó correctamente aunque capturó menos armónicos completos que en los otros dos casos por la posición elevada de su F0.
 
  ---
-### - Espectro de la magnitud de la señal filtrada
+### Espectro de la magnitud de la señal filtrada
   
 <p align="center">
   <img src="4.3.jpeg" width="700">
