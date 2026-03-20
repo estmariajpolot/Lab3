@@ -122,7 +122,7 @@ mujer3.wav: Este espectro es el más interesante de los tres. A diferencia de mu
 ---
 ## Análisis de gráficos hombres 
 - Espectro sin filtro
-- 
+  
 <p align="center">
   <img src="4.1.jpeg" width="700">
 </p>
@@ -134,7 +134,7 @@ mujer3.wav: Este espectro es el más interesante de los tres. A diferencia de mu
 hombre1.wav: La señal dura aproximadamente 5.2 segundos con una amplitud de ±15000. Se observa una estructura claramente segmentada con grupos de actividad vocal separados por pausas bien definidas, especialmente notorias alrededor de los segundos 0.7, 2.0 y 2.8. Esto refleja una articulación clara con separación natural entre palabras. La energía no es uniforme: hay una zona de menor intensidad entre 1.0–2.5s y un pico de energía prominente alrededor de 3.0–3.2s, que podría corresponder a una vocal acentuada o sílaba tónica. Los picos positivos son ligeramente mayores que los negativos, lo que sugiere una leve asimetría en la grabación.
 
 <p align="center">
-  <img src="4.2.jpeg" width="700">
+  <img src="5.1.jpeg" width="700">
 </p>
 
 <p align="center">
@@ -144,7 +144,7 @@ hombre1.wav: La señal dura aproximadamente 5.2 segundos con una amplitud de ±1
 hombre2.wav: Con una amplitud de apenas ±7000, esta es la grabación de menor intensidad de los tres hombres, indicando que se habló con menor volumen o mayor distancia al micrófono. A diferencia de hombre1, la señal es densa y continua durante casi todos los 5 segundos, con muy pocas pausas visibles. Esto sugiere una elocución más fluida y encadenada. La densidad del trazo a lo largo de toda la señal indica presencia importante de frecuencias altas, posiblemente por fricativas o una voz naturalmente más brillante. La energía se mantiene relativamente estable con un leve incremento hacia los 3.0–3.5s.
 
 <p align="center">
-  <img src="4.3.jpeg" width="700">
+  <img src="6.1.jpeg" width="700">
 </p>
 
 <p align="center">
@@ -156,7 +156,7 @@ hombre3.wav: Esta es la grabación de mayor amplitud de los tres (±30000), lo q
 - Espectro de magnitud
 
 <p align="center">
-  <img src="5.1.jpeg" width="700">
+  <img src="4.2.jpeg" width="700">
 </p>
 
 <p align="center">
@@ -176,7 +176,7 @@ hombre1.wav: El espectro muestra tres grupos de picos bien definidos: el primero
 hombre2.wav: Este espectro está claramente dominado por un único grupo de picos concentrado entre 100–170 Hz con magnitud máxima de ~4.6×10⁷, siendo el pico más alto de los tres hombres a pesar de tener la menor amplitud temporal. Hay un segundo grupo visible alrededor de 280–350 Hz (~1.9×10⁷) y un tercero más pequeño cerca de 500 Hz (~1.1×10⁷). La energía cae rápidamente después de 600 Hz y es casi nula por encima de 1000 Hz. Esto indica una voz con F0 cercana a 120–130 Hz y bajo brillo espectral, es decir, una voz más oscura y grave en timbre, con pocos armónicos de alta frecuencia. La concentración de energía en el primer pico es la característica más distintiva de esta voz.
 
 <p align="center">
-  <img src="5.3.jpeg" width="700">
+  <img src="6.2.jpeg" width="700">
 </p>
 
 <p align="center">
