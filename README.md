@@ -986,10 +986,3 @@ Ajustar en `analisis_voz.py` el diccionario `cortes` con los tiempos de inicio y
 ```
 
 ---
-
-<div align="center">
-
-**Universidad Militar Nueva Granada · Ingeniería Biomédica · 2026**  
-*Procesamiento Digital de Señales — Práctica de Laboratorio: Análisis Espectral de la Voz*
-
-</div>
