@@ -27,11 +27,21 @@ Se grabaron 6 señales de voz (3 mujeres, 3 hombres) pronunciando la misma frase
 ---
 
 ##  Metodología 
+En primer lugar, se realizó la importación de librerías y la definición de los archivos de audio junto con sus parámetros de recorte y ventanas de análisis. Posteriormente, cada señal fue leída, recortada en el intervalo de interés y normalizada para garantizar un adecuado procesamiento. Además, se clasificaron las señales según el género de la voz con el fin de establecer rangos de frecuencia apropiados para el análisis.
 
-### Diagrama de Flujo
+En una segunda etapa, se llevó a cabo el análisis en el dominio del tiempo y la frecuencia. Se graficó la señal original y se calculó su transformada de Fourier (FFT) para obtener parámetros como la frecuencia fundamental (F0), la frecuencia media (centroide espectral) y la intensidad RMS. Luego, se aplicó un filtro pasa-banda para aislar las componentes relevantes de la señal y se repitió el análisis espectral sobre la señal filtrada.
+
+Finalmente, se realizó un análisis más detallado mediante la selección de una ventana temporal específica, sobre la cual se calculó nuevamente la FFT para estimar la F0 con mayor precisión. A partir de esta ventana, se detectaron los picos de la señal para identificar ciclos, lo que permitió calcular parámetros de variabilidad como el jitter y el shimmer. Todos los resultados obtenidos fueron almacenados en una tabla resumen y posteriormente comparados mediante gráficas, incluyendo diagramas de caja y gráficos de barras, para analizar las diferencias entre voces masculinas y femeninas.
+
 ---
+### Diagrama de Flujo
 <p align="center">
   <img src="Diagrama.png" width="700">
+</p>
+
+<p align="center">
+  <em>Diagrama de flujo completo código principal
+</em>
 </p>
 ---
 
