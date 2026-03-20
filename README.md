@@ -140,7 +140,6 @@ plt.show()
 
 ---
 ## Análisis de gráficos hombres 
-- Espectro sin filtro
   
 <p align="center">
   <img src="4.1.jpeg" width="700">
@@ -585,7 +584,7 @@ En hombre1 el seguimiento es bueno durante los segmentos vocales, pero hay zonas
 
 ---
 
-#### Paso 12 a 13: Ventana de análisis y F0 refinado
+#### Ventana de análisis y F0 
 
 El jitter y el shimmer se calculan ciclo a ciclo dentro de un segmento corto de voz sostenida y estable, sin pausas ni transiciones entre fonemas. Trabajar sobre la señal completa sería incorrecto porque la F0 varía naturalmente con la entonación a lo largo de la frase. Una ventana de 60 ms sobre una región vocal sostenida es adecuada: larga suficiente para capturar varios ciclos glóticos (a 200 Hz hay ~12 ciclos en 60 ms) y corta suficiente para ser cuasi-estacionaria.
 
@@ -663,7 +662,7 @@ Aplicar la FFT sobre la ventana de 60 ms en lugar de toda la señal da una estim
 
 ---
 
-#### Paso 14: Detección de ciclos glóticos
+#### Detección de ciclos 
 
 Con la F0 estimada se calcula el período aproximado en muestras y se busca el pico máximo dentro de cada segmento sucesivo. Este método basado en segmentación es efectivo para señales quasi-periódicas en regiones estables.
 
@@ -731,7 +730,7 @@ El desfase inicial de `0.2 × período` es intencional: evita capturar un pico i
 
 ---
 
-#### Paso 15 y 16: Jitter y Shimmer
+#### Jitter y Shimmer
 
 Con los tiempos de cada pico (Ti) y sus amplitudes (Ai) se calculan las cuatro métricas de estabilidad vocal. El jitter mide la variabilidad ciclo a ciclo en la frecuencia de vibración de las cuerdas vocales; el shimmer mide la variabilidad ciclo a ciclo en la amplitud.
 
@@ -763,7 +762,7 @@ print(f"  Shimmer abs : {shimmer_abs:.6f}    |  rel : {shimmer_rel:.4f} %")
 
 ---
 
-### PARTE C — Comparación y visualización
+### PARTE C — Comparación 
 
 ```python
 import pandas as pd
