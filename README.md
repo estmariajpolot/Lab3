@@ -730,6 +730,14 @@ plt.show()
 
 ---
 
+<p align="center">
+  <img src="F.png" width="700">
+</p
+
+<p align="center">
+  <img src="SNR.png" width="700">
+</p
+---
 ## Análisis de Resultados
 
 ### Frecuencia Fundamental (F0)
