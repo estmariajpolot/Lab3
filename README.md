@@ -90,7 +90,7 @@ mujer3.wav: Este espectro es notablemente diferente a los otros dos. La energía
 - Espectro de la magnitud de la señal filtrada
 
 <p align="center">
-  <img src="3.1.jpeg" width="700">
+  <img src="1.3.jpeg" width="700">
 </p>
 
 <p align="center">
@@ -100,7 +100,7 @@ mujer3.wav: Este espectro es notablemente diferente a los otros dos. La energía
 mujer1.wav: El filtro funcionó correctamente: toda la energía está concentrada entre 150 y 500 Hz, con cero contenido fuera de ese rango. Se distinguen claramente dos grupos de picos: el primero alrededor de 300–350 Hz (pico máximo ~2.9×10⁷, el más alto de las tres) y el segundo alrededor de 450–500 Hz. La separación entre ambos grupos es nítida, lo que confirma una F0 bien definida cerca de 300 Hz con su primer armónico visible. El filtro no distorsionó la estructura espectral vocal.
 
 <p align="center">
-  <img src="3.2.jpeg" width="700">
+  <img src="2.3.jpeg" width="700">
 </p>
 
 <p align="center">
