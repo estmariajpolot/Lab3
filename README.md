@@ -216,3 +216,61 @@ María José Polo Tovar – Código 5600894
 </p>
 
 **hombre3.wav:** es el más ancho y uniforme de los tres después del filtrado. La energía se reparte de forma bastante pareja en tres grupos entre 80 y 400 Hz, sin valles profundos entre ellos. El pico más alto (~5.3×10⁷) aparece entre 170–250 Hz, flanqueado por grupos de magnitud similar en 80–120 Hz y 300–400 Hz. Esto es consecuencia directa de su F0 más baja (~85–100 Hz), que hace que varios armónicos queden dentro del rango del filtro, dando esa apariencia de energía continua y distribuida.
+
+---
+## Señal original vs filtrada – Mujeres
+<p align="center">
+  <img src="7.jpeg" width="700">
+</p>
+
+<p align="center">
+  <em>Señal original vs filtrada mujer1</em>
+</p>
+
+<p align="center">
+  <img src="8.jpeg" width="700">
+</p>
+
+<p align="center">
+  <em>Señal original vs filtrada mujer2</em>
+</p>
+
+<p align="center">
+  <img src="9.jpeg" width="700">
+</p>
+
+<p align="center">
+  <em>Señal original vs filtrada mujer3</em>
+</p>
+
+El filtro pasa-banda funcionó correctamente en las tres grabaciones, capturando la componente glotal y eliminando el contenido fuera del rango de interés. En mujer1 el solapamiento entre la señal original y la filtrada fue el más uniforme de las tres, lo que indica que su energía vocal está bien concentrada dentro del rango 150–500 Hz. En mujer2 la mayor diferencia se da en los transitorios iniciales de alta amplitud, pero en el resto de la grabación el seguimiento es bueno. Mujer3 es la que más energía pierde tras el filtrado, especialmente en la segunda mitad, consecuencia de su F0 más alta y su espectro más distribuido en frecuencias altas. En general el filtro cumplió su propósito en los tres casos y dejó una señal limpia para el análisis posterior de jitter y shimmer.
+
+---
+## Señal original vs filtrada – Hombres
+<p align="center">
+  <img src="10.jpeg" width="700">
+</p>
+
+<p align="center">
+  <em>Señal original vs filtrada hombre1</em>
+</p>
+
+<p align="center">
+  <img src="11.jpeg" width="700">
+</p>
+
+<p align="center">
+  <em>Señal original vs filtrada hombre2</em>
+</p>
+
+<p align="center">
+  <img src="12.jpeg" width="700">
+</p>
+
+<p align="center">
+  <em>Señal original vs filtrada hombre3</em>
+</p>
+
+El filtro pasa-banda funcionó correctamente en los tres hombres, aunque con diferencias notables entre ellos. En hombre1 el seguimiento es bueno durante los segmentos vocales, pero hay zonas donde la señal original supera claramente a la filtrada, especialmente en los picos negativos de mayor amplitud, lo que indica que parte de su energía vocal está fuera del rango 80–400 Hz. En hombre2 es donde mejor funciona el filtro: la señal naranja cubre casi completamente la original a lo largo de toda la grabación, lo que confirma que la mayor parte de su energía vocal está concentrada dentro del rango filtrado, algo coherente con el espectro dominado por frecuencias bajas que se vio antes. En hombre3 la diferencia entre ambas señales es la más evidente de los tres, con la original superando ampliamente a la filtrada en varios segmentos, lo que se explica por la riqueza armónica de su voz y la cantidad de energía que tiene distribuida fuera del rango del filtro. En general el filtro cumplió su función en los tres casos, siendo más eficiente en hombre2 y dejando más contenido fuera en hombre3.
+
+
