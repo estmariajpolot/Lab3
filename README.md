@@ -518,7 +518,7 @@ En hombre1 el seguimiento es bueno durante los segmentos vocales, pero hay zonas
 **Espectros de la señal filtrada — Mujeres:**
 
 <p align="center">
-  <img src=".jpeg" width="700">
+  <img src="1.3.jpeg" width="700">
 </p>
 
 <p align="center">
@@ -528,7 +528,7 @@ En hombre1 el seguimiento es bueno durante los segmentos vocales, pero hay zonas
 **mujer1.wav:** el filtro delimitó bien la energía entre 150 y 500 Hz, dejando dos grupos de picos claramente separados: el principal entre 300–350 Hz con un máximo de 2.9×10⁷, y el secundario entre 450–500 Hz. La separación limpia entre ambos confirma una F0 bien definida cerca de 300 Hz con su primer armónico visible.
 
 <p align="center">
-  <img src=".jpeg" width="700">
+  <img src="2.3.jpeg" width="700">
 </p>
 
 <p align="center">
@@ -538,7 +538,7 @@ En hombre1 el seguimiento es bueno durante los segmentos vocales, pero hay zonas
 **mujer2.wav:** conserva sus picos principales entre 250–350 Hz (máximo 6.7×10⁷) y un segundo grupo entre 450–500 Hz. Todo el contenido por encima de 500 Hz fue eliminado sin afectar los picos vocales, lo que confirma que el filtro fue bien aplicado.
 
 <p align="center">
-  <img src=".jpeg" width="700">
+  <img src="3.3.jpeg" width="700">
 </p>
 
 <p align="center">
@@ -550,7 +550,7 @@ En hombre1 el seguimiento es bueno durante los segmentos vocales, pero hay zonas
 **Espectros de la señal filtrada — Hombres:**
 
 <p align="center">
-  <img src="figuras/4.3.jpeg" width="700">
+  <img src="4.3.jpeg" width="700">
 </p>
 
 <p align="center">
@@ -560,7 +560,7 @@ En hombre1 el seguimiento es bueno durante los segmentos vocales, pero hay zonas
 **hombre1.wav:** el filtro conservó dos grupos de picos con un valle claro alrededor de 170 Hz. El primero está entre 80–150 Hz y el segundo entre 200–300 Hz con el pico más alto (~3.4×10⁷). Esa separación limpia entre F0 y su segundo armónico hace de esta señal la más favorable de los tres hombres para calcular jitter y shimmer con precisión.
 
 <p align="center">
-  <img src="figuras/5.3.jpeg" width="700">
+  <img src="5.3.jpeg" width="700">
 </p>
 
 <p align="center">
@@ -570,7 +570,7 @@ En hombre1 el seguimiento es bueno durante los segmentos vocales, pero hay zonas
 **hombre2.wav:** quedó con un pico muy dominante entre 100–170 Hz (máximo 4.6×10⁷), seguido de grupos secundarios en 280–320 Hz y cerca de 400 Hz considerablemente más débiles. La gran diferencia de magnitud entre el primer pico y los demás ratifica que esta voz concentra casi toda su energía en la frecuencia fundamental con poca presencia de armónicos.
 
 <p align="center">
-  <img src="figuras/6.3.jpeg" width="700">
+  <img src="6.3.jpeg" width="700">
 </p>
 
 <p align="center">
