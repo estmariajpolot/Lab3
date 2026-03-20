@@ -36,7 +36,7 @@ María José Polo Tovar – Código 5600894
 mujer1.wav: la señal tiene buena amplitud (±10000) y se ve actividad vocal continua a lo largo de los ~4.5 segundos. Se notan claramente los segmentos sonoros (partes densas) separados por pequeñas pausas que corresponden a consonantes o silencios entre palabras. El pico inicial al inicio (~0.1s) puede ser un artefacto de inicio de grabación. La energía decae gradualmente hacia el final, lo cual es natural al terminar de hablar.
 
 <p align="center">
-  <img src="1.2.jpeg" width="700">
+  <img src="2.1.jpeg" width="700">
 </p>
 
 <p align="center">
@@ -46,7 +46,7 @@ mujer1.wav: la señal tiene buena amplitud (±10000) y se ve actividad vocal con
 mujer2.wav: esta es la señal con mayor amplitud de las tres (±30000), lo que indica que esta persona habló más cerca del micrófono o con mayor volumen. El pico al inicio (~0.1–0.2s) es muy pronunciado y podría ser una consonante explosiva o un artefacto. La señal tiene segmentos bien definidos con pausas claras entre palabras. La mayor amplitud puede afectar ligeramente el shimmer si hay zonas cercanas a saturación.
 
 <p align="center">
-  <img src="1.3.jpeg" width="700">
+  <img src="3.1.jpeg" width="700">
 </p>
 
 <p align="center">
