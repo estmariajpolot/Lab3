@@ -188,7 +188,7 @@ hombre3.wav: Es el espectro más complejo y rico en contenido frecuencial de los
 - Espectro de la magnitud de la señal filtrada
   
 <p align="center">
-  <img src="6.1.jpeg" width="700">
+  <img src="4.3.jpeg" width="700">
 </p>
 
 <p align="center">
@@ -198,7 +198,7 @@ hombre3.wav: Es el espectro más complejo y rico en contenido frecuencial de los
 hombre1.wav: El filtro actuó correctamente limitando la energía al rango 80–400 Hz, con energía nula fuera de ese rango. Se conservan dos grupos de picos principales: el primero entre 80–150 Hz (picos ~3.1×10⁷) y el segundo entre 200–300 Hz (pico máximo ~3.4×10⁷). Entre ambos grupos hay un valle bien definido alrededor de 170 Hz, lo que confirma que son el F0 y su segundo armónico claramente diferenciados. El tercer grupo que se veía en el espectro sin filtrar (~500–700 Hz) fue correctamente eliminado por el filtro. La estructura de dos picos simétricos y bien separados indica una F0 muy estable y periódica, ideal para el cálculo preciso de jitter y shimmer.
 
 <p align="center">
-  <img src="6.2.jpeg" width="700">
+  <img src="5.3.jpeg" width="700">
 </p>
 
 <p align="center">
