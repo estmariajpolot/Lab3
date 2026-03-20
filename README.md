@@ -20,3 +20,8 @@ María José Polo Tovar – Código 5600894
 ---
 
 ## Descripción
+
+---
+## Análisis de gráficos mujeres 
+- Espectro sin filtro (Señal de voz)
+  
