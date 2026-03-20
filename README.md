@@ -618,7 +618,47 @@ f0_ventana = frec_win[idx_win[np.argmax(mag_win[idx_win])]]
 </p>
 
 <p align="center">
-  <em>Señal de voz hombre1</em>
+  <em>señal filtrada + ventana: mujer1</em>
+</p>
+
+<p align="center">
+  <img src="A2.png" width="700">
+</p>
+
+<p align="center">
+  <em>señal filtrada + ventana: mujer2</em>
+</p>
+
+<p align="center">
+  <img src="A3.png" width="700">
+</p>
+
+<p align="center">
+  <em>señal filtrada + ventana: mujer3</em>
+</p>
+
+<p align="center">
+  <img src="A4.png" width="700">
+</p>
+
+<p align="center">
+  <em>señal filtrada + ventana: hombre1</em>
+</p>
+
+<p align="center">
+  <img src="A5.png" width="700">
+</p>
+
+<p align="center">
+  <em>señal filtrada + ventana: hombre2</em>
+</p>
+
+<p align="center">
+  <img src="A6.png" width="700">
+</p>
+
+<p align="center">
+  <em>señal filtrada + ventana: hombre3</em>
 </p>
 
 Aplicar la FFT sobre la ventana de 60 ms en lugar de toda la señal da una estimación de F0 más representativa del momento donde se medirán jitter y shimmer. La resolución espectral de la ventana es `fs/N ≈ 16.7 Hz`, lo que da una precisión de ±8 Hz en la estimación de F0: suficiente para calcular el período glótico con el nivel de detalle requerido.
