@@ -31,7 +31,7 @@ Se grabaron 6 señales de voz (3 mujeres, 3 hombres) pronunciando la misma frase
 ### Diagrama de Flujo
 ---
 <p align="center">
-  <img src="Diagrama.jpeg" width="700">
+  <img src="Diagrama.png" width="700">
 </p>
 ---
 
