@@ -681,6 +681,12 @@ while i + periodo < len(ventana):
 tiempos   = np.array(picos_idx) / fs
 picos_amp = np.array(picos_amp)
 ```
+<p align="center">
+  <img src="C1.png" width="700">
+</p>
+<p align="center">
+  <em>señal filtrada + ventana: mujer1</em>
+</p>
 
 El desfase inicial de `0.2 × período` es intencional: evita capturar un pico incompleto al comienzo de la ventana. Esto explica por qué el número de ciclos detectados es sistemáticamente uno menos que el esperado teóricamente, como se puede verificar en los resultados: a 200 Hz se esperan ~12 ciclos en 60 ms y se detectan 11; a 350 Hz se esperan ~21 y se detectan 20, y así sucesivamente. Es una diferencia predecible, no un error del algoritmo.
 
