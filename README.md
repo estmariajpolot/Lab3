@@ -217,8 +217,6 @@ plt.show()
   <em>Espectro de magnitud mujer2</em>
 </p>
 
-
-
 **mujer2.wav:** presenta la mayor magnitud de las tres, alcanzando 6.7×10⁷, coherente con la alta amplitud que ya se veía en su señal temporal. Sus picos principales están entre 250–350 Hz, con un segundo grupo cerca de 500 Hz y un tercero visible entre 600–700 Hz. La distribución armónica es ordenada y bien definida, lo que refleja una voz con buena proyección y periodicidad estable. Hay algo de energía por encima de 1000 Hz aunque bastante atenuada.
 
 ---
@@ -229,7 +227,6 @@ plt.show()
 <p align="center">
   <em>Espectro de magnitud mujer3</em>
 </p>
-
 
 **mujer3.wav:** es la más distinta de las tres. Su energía no se concentra en uno o dos grupos sino que se distribuye desde 200 Hz hasta cerca de 1500 Hz, con el pico más alto (~1.2×10⁷) entre 400–450 Hz. Esta distribución amplia indica una voz con mayor brillo, más armónicos presentes y posiblemente más consonantes fricativas en la frase grabada que en las otras dos.
 
