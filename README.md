@@ -491,14 +491,14 @@ El filtro pasa-banda funcionó correctamente en las tres grabaciones. En mujer1 
 **Análisis de señal original vs. filtrada — Hombres:**
 
 <p align="center">
-  <img src="figuras/10.jpeg" width="700">
+  <img src="10.jpeg" width="700">
 </p>
 <p align="center">
   <em>Señal original vs. filtrada hombre1</em>
 </p>
 
 <p align="center">
-  <img src="figuras/11.jpeg" width="700">
+  <img src="11.jpeg" width="700">
 </p>
 
 <p align="center">
@@ -506,7 +506,7 @@ El filtro pasa-banda funcionó correctamente en las tres grabaciones. En mujer1 
 </p>
 
 <p align="center">
-  <img src="figuras/12.jpeg" width="700">
+  <img src="12.jpeg" width="700">
 </p>
 
 <p align="center">
@@ -518,7 +518,7 @@ En hombre1 el seguimiento es bueno durante los segmentos vocales, pero hay zonas
 **Espectros de la señal filtrada — Mujeres:**
 
 <p align="center">
-  <img src="figuras/1.3.jpeg" width="700">
+  <img src="7.jpeg" width="700">
 </p>
 
 <p align="center">
@@ -528,7 +528,7 @@ En hombre1 el seguimiento es bueno durante los segmentos vocales, pero hay zonas
 **mujer1.wav:** el filtro delimitó bien la energía entre 150 y 500 Hz, dejando dos grupos de picos claramente separados: el principal entre 300–350 Hz con un máximo de 2.9×10⁷, y el secundario entre 450–500 Hz. La separación limpia entre ambos confirma una F0 bien definida cerca de 300 Hz con su primer armónico visible.
 
 <p align="center">
-  <img src="figuras/2.3.jpeg" width="700">
+  <img src="8.jpeg" width="700">
 </p>
 
 <p align="center">
@@ -538,7 +538,7 @@ En hombre1 el seguimiento es bueno durante los segmentos vocales, pero hay zonas
 **mujer2.wav:** conserva sus picos principales entre 250–350 Hz (máximo 6.7×10⁷) y un segundo grupo entre 450–500 Hz. Todo el contenido por encima de 500 Hz fue eliminado sin afectar los picos vocales, lo que confirma que el filtro fue bien aplicado.
 
 <p align="center">
-  <img src="figuras/3.3.jpeg" width="700">
+  <img src="9.jpeg" width="700">
 </p>
 
 <p align="center">
