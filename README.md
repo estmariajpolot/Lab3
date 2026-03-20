@@ -34,6 +34,7 @@ En una segunda etapa, se llevó a cabo el análisis en el dominio del tiempo y l
 Finalmente, se realizó un análisis más detallado mediante la selección de una ventana temporal específica, sobre la cual se calculó nuevamente la FFT para estimar la F0 con mayor precisión. A partir de esta ventana, se detectaron los picos de la señal para identificar ciclos, lo que permitió calcular parámetros de variabilidad como el jitter y el shimmer. Todos los resultados obtenidos fueron almacenados en una tabla resumen y posteriormente comparados mediante gráficas, incluyendo diagramas de caja y gráficos de barras, para analizar las diferencias entre voces masculinas y femeninas.
 
 ---
+
 ### Diagrama de Flujo
 <p align="center">
   <img src="Diagrama.png" width="700">
@@ -43,6 +44,8 @@ Finalmente, se realizó un análisis más detallado mediante la selección de un
   <em>Diagrama de flujo completo código principal
 </em>
 </p>
+
+
 ---
 
 ### PARTE A — Análisis espectral de la señal completa
@@ -135,7 +138,6 @@ plt.show()
 
 **mujer3.wav:** es visualmente la más limpia. Su amplitud es moderada (±12000) y la energía se concentra en el primer segundo y medio de la grabación, decayendo progresivamente después, lo que sugiere que la frase se dijo con más énfasis al comienzo. El ruido de fondo es el menos visible de las tres grabaciones.
 
----
 ---
 ## Análisis de gráficos hombres 
 - Espectro sin filtro
@@ -295,7 +297,35 @@ print(f"  Intensidad RMS      : {rms:.4f}")
   
 **hombre3.wav:** es el más grave y el de espectro más rico de los tres. Tiene cuatro grupos de picos entre 70 y 600 Hz, con magnitudes bastante similares entre sí (entre 4.8×10⁷ y 5.5×10⁷), sin que ninguno domine claramente sobre los demás. Esto indica una F0 baja (~85–100 Hz) con una serie armónica muy completa. La energía llega con algo de presencia hasta los 1000 Hz, confirmando una voz resonante y con cuerpo.
 
+---
 
+#### Filtro Butterworth pasa-banda
+
+Antes de medir jitter y shimmer es necesario aislar la banda vocal y eliminar el ruido fuera del rango de interés. El ruido de alta frecuencia puede crear falsos picos en la señal, conduciendo a estimaciones erróneas de los períodos y amplitudes glóticas. Se usa un filtro Butterworth de orden 4 porque tiene respuesta maximalmente plana en la banda de paso, lo que significa que no distorsiona las amplitudes relativas de los armónicos vocales dentro del rango: exactamente lo que se necesita para que el shimmer refleje la variabilidad real de la voz y no una distorsión introducida por el filtro.
+
+`filtfilt` aplica el filtro en dos pasadas —hacia adelante y hacia atrás— cancelando el desfase de fase. Si se usara `lfilter`, los picos quedarían desplazados en el tiempo, y los períodos Ti medidos para el jitter serían incorrectos.
+
+```python
+from scipy.signal import butter, filtfilt
+
+nyquist = fs / 2
+b, a = butter(4, [fmin / nyquist, fmax / nyquist], btype='band')
+senal_f = filtfilt(b, a, senal)
+senal_f = senal_f / (np.max(np.abs(senal_f)) + 1e-8)
+
+plt.figure(figsize=(10, 4))
+plt.plot(t_full, senal,   label="Original", alpha=0.5, linewidth=0.8)
+plt.plot(t_full, senal_f, label="Filtrada",  linewidth=0.9)
+plt.legend()
+plt.title(f"Señal original vs. filtrada: {archivo}  [{fmin}–{fmax} Hz]")
+plt.xlabel("Tiempo (s)")
+plt.ylabel("Amplitud normalizada")
+plt.grid(True)
+plt.tight_layout()
+plt.show()
+```
+
+---
 
 ## Señal original vs filtrada – Mujeres
 
@@ -327,32 +357,6 @@ print(f"  Intensidad RMS      : {rms:.4f}")
 El filtro pasa-banda funcionó correctamente en las tres grabaciones, capturando la componente glotal y eliminando el contenido fuera del rango de interés. En mujer1 el solapamiento entre la señal original y la filtrada fue el más uniforme de las tres, lo que indica que su energía vocal está bien concentrada dentro del rango 150–500 Hz. En mujer2 la mayor diferencia se da en los transitorios iniciales de alta amplitud, pero en el resto de la grabación el seguimiento es bueno. Mujer3 es la que más energía pierde tras el filtrado, especialmente en la segunda mitad, consecuencia de su F0 más alta y su espectro más distribuido en frecuencias altas. En general el filtro cumplió su propósito en los tres casos y dejó una señal limpia para el análisis posterior de jitter y shimmer.
 
 ---
-#### Filtro Butterworth pasa-banda
-
-Antes de medir jitter y shimmer es necesario aislar la banda vocal y eliminar el ruido fuera del rango de interés. El ruido de alta frecuencia puede crear falsos picos en la señal, conduciendo a estimaciones erróneas de los períodos y amplitudes glóticas. Se usa un filtro Butterworth de orden 4 porque tiene respuesta maximalmente plana en la banda de paso, lo que significa que no distorsiona las amplitudes relativas de los armónicos vocales dentro del rango: exactamente lo que se necesita para que el shimmer refleje la variabilidad real de la voz y no una distorsión introducida por el filtro.
-
-`filtfilt` aplica el filtro en dos pasadas —hacia adelante y hacia atrás— cancelando el desfase de fase. Si se usara `lfilter`, los picos quedarían desplazados en el tiempo, y los períodos Ti medidos para el jitter serían incorrectos.
-
-```python
-from scipy.signal import butter, filtfilt
-
-nyquist = fs / 2
-b, a = butter(4, [fmin / nyquist, fmax / nyquist], btype='band')
-senal_f = filtfilt(b, a, senal)
-senal_f = senal_f / (np.max(np.abs(senal_f)) + 1e-8)
-
-plt.figure(figsize=(10, 4))
-plt.plot(t_full, senal,   label="Original", alpha=0.5, linewidth=0.8)
-plt.plot(t_full, senal_f, label="Filtrada",  linewidth=0.9)
-plt.legend()
-plt.title(f"Señal original vs. filtrada: {archivo}  [{fmin}–{fmax} Hz]")
-plt.xlabel("Tiempo (s)")
-plt.ylabel("Amplitud normalizada")
-plt.grid(True)
-plt.tight_layout()
-plt.show()
-```
-
 
 ## Señal original vs filtrada – Hombres
 <p align="center">
@@ -454,7 +458,7 @@ El filtro pasa-banda funcionó correctamente en los tres hombres, aunque con dif
 **hombre3.wav:** es el más ancho y uniforme de los tres después del filtrado. La energía se reparte de forma bastante pareja en tres grupos entre 80 y 400 Hz, sin valles profundos entre ellos. El pico más alto (~5.3×10⁷) aparece entre 170–250 Hz, flanqueado por grupos de magnitud similar en 80–120 Hz y 300–400 Hz. Esto es consecuencia directa de su F0 más baja (~85–100 Hz), que hace que varios armónicos queden dentro del rango del filtro, dando esa apariencia de energía continua y distribuida.
 
 ---
----
+
 
 La voz humana es una señal biomédica no estacionaria cuya estructura espectral cambia continuamente con el tiempo: varía entre fonemas, sílabas y palabras, y está modulada por la entonación, el ritmo y el estado de las cuerdas vocales. Por eso el análisis se realiza sobre ventanas cortas donde la señal puede tratarse como cuasi-estacionaria. Las características espectrales que se extraen no son solo rasgos físicos: son indicadores directos de la fisiología del tracto vocal, y sus alteraciones pueden señalar patologías vocales, enfermedades neurológicas o simplemente diferencias anatómicas entre hablantes.
 
