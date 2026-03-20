@@ -616,7 +616,6 @@ f0_ventana = frec_win[idx_win[np.argmax(mag_win[idx_win])]]
 <p align="center">
   <img src="A1.png" width="700">
 </p>
-
 <p align="center">
   <em>señal filtrada + ventana: mujer1</em>
 </p>
@@ -624,7 +623,6 @@ f0_ventana = frec_win[idx_win[np.argmax(mag_win[idx_win])]]
 <p align="center">
   <img src="A2.png" width="700">
 </p>
-
 <p align="center">
   <em>señal filtrada + ventana: mujer2</em>
 </p>
@@ -632,7 +630,6 @@ f0_ventana = frec_win[idx_win[np.argmax(mag_win[idx_win])]]
 <p align="center">
   <img src="A3.png" width="700">
 </p>
-
 <p align="center">
   <em>señal filtrada + ventana: mujer3</em>
 </p>
@@ -640,7 +637,6 @@ f0_ventana = frec_win[idx_win[np.argmax(mag_win[idx_win])]]
 <p align="center">
   <img src="A4.png" width="700">
 </p>
-
 <p align="center">
   <em>señal filtrada + ventana: hombre1</em>
 </p>
@@ -648,7 +644,6 @@ f0_ventana = frec_win[idx_win[np.argmax(mag_win[idx_win])]]
 <p align="center">
   <img src="A5.png" width="700">
 </p>
-
 <p align="center">
   <em>señal filtrada + ventana: hombre2</em>
 </p>
@@ -656,7 +651,6 @@ f0_ventana = frec_win[idx_win[np.argmax(mag_win[idx_win])]]
 <p align="center">
   <img src="A6.png" width="700">
 </p>
-
 <p align="center">
   <em>señal filtrada + ventana: hombre3</em>
 </p>
