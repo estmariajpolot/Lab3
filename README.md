@@ -58,7 +58,7 @@ mujer3.wav: es la señal más limpia visualmente de las tres. La amplitud es mod
 - Espectro de magnitud
   
 <p align="center">
-  <img src="2.1.jpeg" width="700">
+  <img src="2.2.jpeg" width="700">
 </p>
 
 <p align="center">
@@ -68,7 +68,7 @@ mujer3.wav: es la señal más limpia visualmente de las tres. La amplitud es mod
 mujer1.wav: Se observan dos grupos de picos dominantes: el primero alrededor de 300–400 Hz (pico máximo ~2.9×10⁷) y el segundo alrededor de 500–700 Hz. Estos corresponden al F0 y sus primeros armónicos, más los formantes F1 y F2 del habla. La energía cae rápidamente por encima de 1000 Hz, lo que indica una voz con timbre más grave dentro del rango femenino. Hay poca energía por debajo de 100 Hz, lo que confirma buena calidad de grabación sin ruido de baja frecuencia importante.
 
 <p align="center">
-  <img src="2.2.jpeg" width="700">
+  <img src="3.2.jpeg" width="700">
 </p>
 
 <p align="center">
@@ -78,7 +78,7 @@ mujer1.wav: Se observan dos grupos de picos dominantes: el primero alrededor de 
 mujer2.wav: Es el espectro con mayor magnitud absoluta (hasta 6.7×10⁷), consistente con la mayor amplitud vista en la señal temporal. Los picos principales están en 250–350 Hz y un segundo grupo bien definido cerca de 500 Hz. Destaca un tercer grupo de picos visible alrededor de 600–700 Hz. La distribución armónica está bien definida, lo que indica una voz bien proyectada y con buena periodicidad. La energía en frecuencias altas (>1000 Hz) es baja pero presente.
 
 <p align="center">
-  <img src="2.3.jpeg" width="700">
+  <img src="4.2.jpeg" width="700">
 </p>
 
 <p align="center">
