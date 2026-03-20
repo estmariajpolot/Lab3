@@ -29,9 +29,10 @@ Se grabaron 6 señales de voz (3 mujeres, 3 hombres) pronunciando la misma frase
 ##  Metodología 
 
 ### Diagrama de Flujo
-
 ---
-
+<p align="center">
+  <img src="Diagrama.jpeg" width="700">
+</p>
 ---
 
 ### PARTE A — Análisis espectral de la señal completa
@@ -681,7 +682,7 @@ plt.show()
 
 ---
 
-## 📊 Resultados
+## Resultados
 
 ### Tabla resumen de parámetros espectrales
 
@@ -706,7 +707,7 @@ plt.show()
 
 ---
 
-## 🔬 Análisis de Resultados
+## Análisis de Resultados
 
 ### Frecuencia Fundamental (F0)
 
@@ -760,7 +761,7 @@ La tendencia relativa, hombres con mayor shimmer que mujeres, es consistente con
 
 ---
 
-## 💊 Importancia Clínica del Jitter y Shimmer
+## Importancia Clínica del Jitter y Shimmer
 
 El jitter y shimmer son herramientas de uso extendido en evaluación fonoaudiológica porque reflejan directamente la regularidad de la vibración glótica. Su aumento está asociado a nódulos vocales (que impiden el cierre glótico uniforme elevando el shimmer), parálisis de cuerdas vocales (asimetría en la vibración que eleva ambos parámetros), enfermedad de Parkinson (el temblor en la musculatura laríngea produce un patrón de jitter oscilatorio característico), disfonía espasmódica (contracciones involuntarias del músculo tiroaritenoideo), y estadios tempranos de cáncer de laringe donde la masa o tensión glótica se altera antes de que el tumor sea visible.
 
@@ -770,7 +771,7 @@ Las afasias son trastornos del lenguaje de origen cortical que afectan la compre
 
 ---
 
-## ❓ Preguntas para la Discusión
+## Preguntas para la Discusión
 
 ### ¿Cómo es la F0 masculina respecto a la femenina? ¿Y el RMS?
 
@@ -782,7 +783,7 @@ La limitación más fundamental es de especificidad: el jitter y shimmer miden e
 
 ---
 
-## ✅ Conclusiones
+## Conclusiones
 
 La F0 demostró ser el parámetro de mayor poder discriminativo entre géneros y el más robusto metodológicamente. Los datos confirmaron de forma consistente que las voces femeninas tienen F0 significativamente más alta (promedio 250 Hz) que las masculinas (promedio 116.67 Hz), en plena concordancia con las diferencias anatómicas de la laringe y el efecto diferencial de la testosterona durante la pubertad. Este resultado se mantuvo estable incluso con grabaciones en condiciones no controladas, lo que confirma que la F0 es un discriminador fiable incluso fuera de entornos clínicos.
 
@@ -796,7 +797,7 @@ El análisis espectral de voz desarrollado en este laboratorio tiene aplicabilid
 
 ---
 
-## 🚀 Cómo Reproducir el Análisis
+## Cómo Reproducir el Análisis
 
 ```bash
 pip install numpy scipy matplotlib pandas
@@ -821,7 +822,7 @@ Ajustar en `analisis_voz.py` el diccionario `cortes` con los tiempos de inicio y
 
 ---
 
-## 📚 Bibliografía
+## Bibliografía
 
 ```
 [1] A. V. Oppenheim, A. S. Willsky y S. H. Nawab, Signals and systems.
